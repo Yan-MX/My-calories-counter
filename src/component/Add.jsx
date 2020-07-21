@@ -11,7 +11,6 @@ function Add({ foodlist, setFood, setSum }) {
   const submit = (event) => {
     setFood([...foodlist, { food: afood, calories: cal, key: index }]);
     setSum((s) => parseInt(s) + parseInt(cal));
-    console.log(foodlist.length);
     index++;
     setAfood("");
     setCal("");
